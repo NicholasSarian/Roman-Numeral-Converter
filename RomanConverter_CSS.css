@@ -1,0 +1,117 @@
+* {
+	outline: none;
+	font-family: Arial Black, Arial;
+}
+html {
+	background: url(Background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#converter > tbody > tr {
+	height: 45px;
+}
+hr {
+	background-color: black;
+	border: none;
+	height: 2px;
+}
+h2 {
+	text-align: center;
+	font-size: 30px;
+	text-shadow: -1px -1px black,
+				 1px -1px black,
+				 -1px 1px black,
+				 1px 1px black,
+				 2px 2px 1px #232323,
+				 3px 3px 1px #434343,
+				 4px 4px 1px #656565,
+				 5px 5px 1px #8F8E8E,
+				 6px 6px 1px #BBBABA;
+	color: gold;
+}
+#resultTitle,
+#result,
+#title,
+#romanReference > tbody > tr > th,
+#romanReference > tbody > tr > td {
+	text-shadow: 1px 1px 1px black,
+				 2px 2px 1px #232323,
+				 3px 3px 1px #434343,
+				 4px 4px 1px #656565,
+				 5px 5px 1px #8F8E8E,
+				 6px 6px 1px #BBBABA;
+	color: gold;
+}
+#resultTitle, #result, #title {
+	font-size: 20px;
+}
+#converter {
+	margin: auto;
+}
+button {
+	background: linear-gradient(gold, #A88E00);
+	border: 3px outset #BBBBBB;
+	padding: 6px 10px;
+	border-radius: 15px;
+	transition: all 0.5s ease;
+	font-size: 15px;
+	cursor: pointer;
+}
+button:hover {
+	background: linear-gradient(#ECBF00, #7D6A00);
+	border: 3px outset #b5b5b5;
+	box-shadow: 5px 5px 6px black;
+	transform: translate(-6px, -6px);
+	color: white;
+}
+#container {
+	width: 75%;
+	margin: auto;
+	border: 5px outset gold;
+	background-color: rgba(255, 255, 255, 0.8);
+	border-radius: 15px;
+	box-shadow: 5px 5px 15px black;
+}
+.msgTR {
+	color: red;
+}
+.msg {
+	width: 169px;
+	text-align: center;
+	border: 2px solid red;
+	border-radius: 15px;
+	background-color: #FFEBEB;
+}
+#number {
+	text-align: center;
+	font-size: 20px;
+	margin: auto;
+	display: block;
+	border-radius: 15px;
+	border: 3px outset gold;
+}
+#number:hover, #number:focus {
+	box-shadow: 5px 5px 10px black;
+}
+#resultTitle {
+	width: 85px;
+}
+#romanReference {
+	margin: auto auto 10px;
+}
+#romanReference,
+#romanReference > tbody > tr,
+#romanReference > tbody > tr > th,
+#romanReference > tbody > tr > td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+#romanReference > tbody > tr > th {
+	background-color: #cdcdcd;
+	padding: 5px 10px 10px;
+}
+#romanReference > tbody > tr > td {
+	background-color: white;
+	padding: 0 0 3px;
+}

@@ -1,0 +1,83 @@
+<html>
+<head>
+	<link rel="stylesheet" href="RomanConverter_CSS.css">
+	<script src="RomanConverter_JS.js" defer></script>
+</head>
+<body>
+	<div id="container">
+		<h2 id="bigTitle">Convert Number to Roman Numeral</h2>
+		
+		<hr width="90%">
+		
+		<table id="converter">
+			<tbody>
+				<tr>
+					<td id="title" colspan="2" style="text-align: center">Enter Number:</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input style="width: 75px" type="text" id="number" onkeydown="numOnly(event)" maxlength="4">
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align: center">
+						<button id="convertBtn" onclick="convertNumber()">Convert</button>
+					</td>
+					<td style="text-align: center">
+						<button id="switch" onclick="switchFunc()">Switch Converter Mode</button>
+					</td>
+				</tr>
+				<tr class="msgTR" style="display: none">
+					<td class="msg" colspan="2">Please enter a number that is less than or equal to 3,999 (roman numerals get more complicated past 4,000)</td>
+				</tr>
+				<tr class="msgTR" style="display: none">
+					<td class="msg" colspan="2">Not a valid roman numeral.</td>
+				</tr>
+				<tr>
+					<td id="resultTitle">Result:</td>
+					<td style="text-align: center">
+						<span id="result">---</span>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<table id="romanReference">
+			<tbody>
+				<tr>
+					<th>Roman Numeral</th>
+					<th>Number</th>
+				</tr>
+				<tr>
+					<td>M</td>
+					<td>1,000</td>
+				</tr>
+				<tr>
+					<td>D</td>
+					<td>500</td>
+				</tr>
+				<tr>
+					<td>C</td>
+					<td>100</td>
+				</tr>
+				<tr>
+					<td>L</td>
+					<td>50</td>
+				</tr>
+				<tr>
+					<td>X</td>
+					<td>10</td>
+				</tr>
+				<tr>
+					<td>V</td>
+					<td>5</td>
+				</tr>
+				<tr>
+					<td>I</td>
+					<td>1</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>
